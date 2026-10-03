@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Cinzel", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-tis-navy: #0B2545;
+  --color-tis-navy-light: #134074;
+  --color-tis-gold: #C5A059;
+  --color-tis-gold-light: #DFC07A;
+  --color-tis-gold-dark: #A47E38;
+  --color-tis-crimson: #8E1624;
+  --color-tis-emerald: #155E45;
+  --color-tis-slate: #1D2D44;
+  --color-tis-cream: #FDFCF7;
+  --color-tis-cream-subtle: #F6F4ED;
+  --color-tis-dark: #06111E;
+  --color-tis-dark-surface: #0B192C;
+  --color-tis-dark-border: #1E334D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0B192C;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A47E38;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-panel {
+  background: rgba(11, 25, 44, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 51, 77, 0.6);
+}
+
+.glass-dropdown {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.dark .glass-dropdown {
+  background: rgba(7, 18, 32, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(30, 51, 77, 0.8);
+}
