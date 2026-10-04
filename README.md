@@ -20,8 +20,8 @@ The redesign transforms the online presence of TIS with:
 
 ## 🚀 Live Demo & Repository
 
-- **Live Deployed URL:** *(Deploy to Vercel/Netlify using instructions below)*
-- **GitHub Repository:** `tis-frontend-assignment`
+- **Live Deployed URL:** [https://tis-frontend-assignment-eight.vercel.app/](https://tis-frontend-assignment-eight.vercel.app/)
+- **GitHub Repository:** [https://github.com/Manasa7788/tis-frontend-assignment](https://github.com/Manasa7788/tis-frontend-assignment)
 
 ---
 
